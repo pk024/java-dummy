@@ -1,0 +1,11 @@
+
+//move to application root folder
+
+//run the command : mvn clean install
+
+//move to docker folder : cd docker
+
+//build the image:  docker build -t <application-name> .
+(eg.: docker build -t devops-accelerator .)
+
+//list the created image : docker images
