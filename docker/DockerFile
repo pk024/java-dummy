@@ -1,0 +1,11 @@
+FROM openjdk:8-jre-alpine
+
+EXPOSE 8080
+
+# Copy war file
+COPY devops-accelerator.jar /devops-accelerator.war
+
+# run the app
+CMD ["/usr/bin/java", "-jar", "/echo.war"]
+
+
