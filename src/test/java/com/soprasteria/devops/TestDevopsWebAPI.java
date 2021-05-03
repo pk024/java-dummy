@@ -34,7 +34,7 @@ public class TestDevopsWebAPI {
 	@Autowired
 	private MockMvc mockMvc;
 
-	BaseObj model = new BaseObj("2035", "DEVOPS Accelerator", "Sopra Steria");
+	BaseObj model = new BaseObj("2035", "DEVOPS Accelerator", "Sopra Steria India");
 
 	@Before
 	public void beforeMethod() {
@@ -49,7 +49,7 @@ public class TestDevopsWebAPI {
 
 		System.out.println("response:::::: " + result.getResponse());
 
-		String expected = "{\"id\": \"2036\",\"projectName\": \"DEVOPS Accelerator\",\"companyName\": \"Sopra Steria\"}";
+		String expected = "{\"id\": \"2035\",\"projectName\": \"DEVOPS Accelerator\",\"companyName\": \"Sopra Steria India\"}";
 
 		JSONAssert.assertEquals(expected, result.getResponse().getContentAsString(), false);
 
